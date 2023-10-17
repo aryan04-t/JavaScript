@@ -1,0 +1,267 @@
+# Difference between Keyword and Word in Programming: 
+
+--> A "word" in programming refers to any sequence of characters used as identifiers or values. 
+--> While a "keyword" is a reserved word with predefined meanings in a specific programming language, serving essential syntactical roles. 
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+
+# Var, Let and Constant: 
+
+
+--> Value of variables (var) can be changed. 
+--> Value of constants (const) cannot be changed.
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+
+# Printing Anything on Console: 
+
+
+@ console.log();
+
+-> You can use comma to sepearate n number of values in consol.log() function, like this you can print n number of values on console.
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+# Hoisting in JS: 
+
+
+-> JS interpreter segregates declaration and initialization and moves it to the top of the code. 
+-> var a = 12; 
+
+-> Interpreter will logically segregate the above line in below given two lines, and it will take the declaration part to the top of the code. 
+-> var a;    // Declaration 
+-> a = 12;   // Initaialization 
+
+-> Because of this if you see code visually you can say that you cna use variables declared with var keyword before declaring them. 
+
+---> This above behaviour is called "Hoisting", always remember it's "Hoisting", not "Hosting". 
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+# Difference between undefined and not-defined: 
+
+-> Undefined means something has existence but its value is not defined. 
+-> Not defined means something doesn't have exsistence. 
+
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+# Code: 
+
+Console.log(a);
+var a = 10;
+
+
+---> In most of the programming languages the above code will give error, "a is not defined", because the a is logged to console before its declaration, and these programming languages don't support hoisting. 
+
+---> But in programming language like JS, the above code will give output "Undefined", because hoisting is a concept which is used in JS. 
+---> And due to hoisting behaviour of JS, the JS interpreter breaks line number 2 of above code into 2 different lines, declaration and initialization, and it moves the declaration part to the top of code. 
+
+-> Because of this the line number 1 knows the existence of variable a, but it's is not initialized until the line no. 1 is going to get executed, that's why you see output "undefined" on console. 
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+# Datatypes in JS:
+
+
+* There are 8 Datatypes in JS. 
+-> 7 Primitive Datatypes 
+-> 1 Non-Primitive Datatype (aka Object Datatype or Reference Datatype) 
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+* 7 Primitive dataypes of JS are: 
+
+1. String: A sequence of characters. 
+2. Number: A numeric value. 
+3. Boolean: A logical value, either true or false. 
+4. Undefined: A value that does not exist. 
+5. Symbol: A unique identifier. 
+6. BigInt: A large integer. 
+7. Null: A value that represents the absence of a value. 
+
+@ Note: Whenever you pass primitive datatypes to a function in JS, or whenever you create copy of an object datatype in JS, the primitive datatypes are always "Passed by Value"  
+
+
+
+* 1 Object Datatype of JS can contain: 
+
+1. An Object -> Objects in JS are defined using {} "Curly Braces" 
+2. An Array -> Arrays in JS are defined using [] "Square Brackets" 
+3. A Date -> Date in JS is defined using () "Round Brackets" 
+
+@ Note: Whenever you pass an object datatype to a function in JS, or whenever you create copy of an object datatype in JS, the object datatype is always "Passed by Reference"  
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+# JavaScript Types are Dynamic: 
+
+
+$ JavaScript is a Dynamically Typed Language.
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+@ Dynamically Typed Programming Languages:
+
+--> When a programming language is described as "dynamically typed", it means that the data types of variables are determined and checked at runtime, as opposed to being explicitly declared or determined at compile-time. 
+--> In dynamically typed languages, variables can change their data type during the execution of a program. 
+
+* Python and Javascript are interpreted languages, they use interpreters to execute their code. 
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+@ Statical Typed Programming Languages: 
+
+--> When a programming language is referred to as "statically typed," it means that the data types of variables are determined at compile-time, 
+--> In a statically typed programming languages you must explicitly declare the data type of a variable, and these types are fixed throughout the program's execution.  
+
+* C++ and Java are compiled languages, they use compilers to execute their code. 
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+* Conditionals: 
+
+-> If else statment 
+-> Else if ladder 
+
+
+# Later On 
+-> Truthy v/s falsy
+-> Switch 
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+* Loops: 
+
+-> For 
+-> While 
+
+
+# Later-on: 
+-> foreach, forin, forof, do-while 
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+* Functions: 
+
+-> In JS, function is declared using "function" keyword. 
+-> Total there are 6 styles to type a function, 3 in JS ES5 (Older version of JS) and 3 in JS ES6 (Newer version of JS) 
+
+
+# Return Type in JavaScript: 
+-> JavaScript does not have a formal return type declaration for functions. 
+-> Unlike some statically typed languages like Java or C++, JavaScript is dynamically typed. 
+-> This means that you don't declare the data type of the value that a function returns. 
+
+
+# Parameters in Function: 
+
+-> You don't even have to declare datatype of parameters in function's declaration because of JavaScript's dynamiclly typed nature. 
+-> In C++ and Java we statically define the datatype of all the declared variables, even the function parameters. 
+
+
+
+*** Difference between arguments and parameters. 
+arguments are real values which we pass while calling a function
+parameters are the varibales which are present in functions declaration and which receive the values which are passed to the function. 
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+# Arrays: 
+
+
+-> if you want to store mmore then one value in a variable, you can create array. 
+
+-> Array is a data structure, which holds group of values. 
+
+-> Array index start from 0 
+
+-> push(type_value_here) function is used to append a value in the array. (means to add a value at the end of array) 
+-> pop(type_value_here) function is used to remove the last value of array.   
+
+-> unshift(type_value_here) function is used to add a value in the beginning of an array. 
+-> shift(type_value_here) function is used to remove a value from the beginning of an array. 
+
+-> splice(type_index_here, how_many_value_to_remove) function is used to remove values from between an array, you can mention the index and including that index how many values you want to remove from there you can mention that ahead in the constructor of this function afte comma. 
+
+
+# Code: 
+
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+# Objects: 
+
+
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+
+# Today I have read concepts. 
+
+# Tomorrow Code and Practice all these. 
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+# References Cited: 
+
+
+* Sheryians Coding School (JavaScript Crash Course: Master the Basics in One Video!): 
+https://www.youtube.com/watch?v=htznIeWKgg8 
+
+
+* W3Schools (JavaScript Data Types): 
+https://www.w3schools.com/js/js_datatypes.asp 
+
+
+* 
+
+
+* ChatGPT: 
+https://chat.openai.com/ 
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+
+
